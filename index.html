@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>World Happiness</title>
+
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<div id="content">
+  <body onload="document.getElementById('Australia-and-New-Zealand').focus();">
+
+<div id="header">
+      <h1>THE STATE OF HAPPINESS, GALLUP WORLD POLL 2017</h1>
+      <h2>Viz created for r/DataIsBeautiful by <a href="https://github.com/Pressed-In" target="_blank"><font color="black">Preston</a></font> (source https://www.kaggle.com/henosergoyan/happiness/data)</h2>
+</div>
+
+<div id="testDIV">
+<div id="container">
+
+    <div id="buttonTitle">
+
+      <p>REGIONS</p>
+
+    </div>
+
+    <div id="buttons">
+
+    <button id = "Australia-and-New-Zealand" class="buttonGroup" type="button">Australia and New Zealand</button>
+    <button id = "North-America" class="buttonGroup" type="button">North America</button>
+    <button id = "Western-Europe" class="buttonGroup" type="button">Western Europe</button>
+    <button id = "Latin-America" class="buttonGroup" type="button">Latin America</button>
+    <button id = "Eastern-Asia" class="buttonGroup" type="button">Eastern Asia</button>
+    <button id = "Southeastern-Asia" class="buttonGroup" type="button">Southeastern Asia</button>
+    <button id = "Central-Eastern-Europe" class="buttonGroup" type="button">Central Eastern Europe</button>
+    <button id = "Middle-East" class="buttonGroup" type="button">Middle East</button>
+    <button id = "Southern-Asia" class="buttonGroup" type="button">Southern Asia</button>
+    <button id = "Sub-Saharan-Africa" class="buttonGroup" type="button">Sub-Saharan Africa</button>
+
+    </div>
+
+</div>
+
+</div>
+
+    <div id="BarChartwrapper">
+
+    <canvas id="myBarChart" width="200" height="200"></canvas>
+
+    </div>
+
+    <div id="Chartwrapper">
+
+    <canvas id="myChart" width="200" height="200"></canvas>
+
+    </div>
+
+    <script src="bar.js"></script>
+    <script src="radar.js"></script>
+
+  </body>
+</div>
+</html>
